@@ -13,6 +13,10 @@ class SortingAlgorithms:
         self._merge_sort_tree(arr, 0, len(arr) - 1, level=0, tracing=tracing)
 
     """
+    -------------------------------------------------------------------------------------------
+    Printing and formatting of the visualization was assisted with AI
+    Partially modified from old pre U notes and https://www.geeksforgeeks.org/dsa/merge-sort/ 
+    -------------------------------------------------------------------------------------------
     Recursively divides the array and merges sorted halves 
     private (helper) method for merge sort 
     @param arr        - list of elements to sort
@@ -51,6 +55,9 @@ class SortingAlgorithms:
                 print(f"{indent}Merge: {arr[left:right+1]}")
     
     """
+    --------------------------------------------------------------------------------
+    Partially taken and modified from https://www.geeksforgeeks.org/dsa/shell-sort/
+    --------------------------------------------------------------------------------
     Performs Shell Sort on the input array using gap reduction by half.
     @param arr       - list of elements to sort
            tracing   - if True, prints each step with current gap
@@ -83,6 +90,9 @@ class SortingAlgorithms:
         self._quick_sort_helper(arr, 0, len(arr) - 1, level=0, tracing=tracing)
 
     """
+    ---------------------------------------------------------------------------------
+    Visualization printing partially assisted with AI
+    ---------------------------------------------------------------------------------
     Private/Helper function for Quick Sort using recursion and partitioning.
     @param arr       - list of elements to sort
            low       - starting index of the segment
@@ -102,6 +112,9 @@ class SortingAlgorithms:
             self._quick_sort_helper(arr, pi + 1, high, level + 1, tracing)
 
     """
+    ---------------------------------------------------------------------------------------------------
+    Partially taken and modified from https://www.geeksforgeeks.org/dsa/quick-sort-algorithm/
+    ---------------------------------------------------------------------------------------------------
     Partitions the array around a pivot for Quick Sort.
     @param arr       - list of elements to sort
            low       - starting index
